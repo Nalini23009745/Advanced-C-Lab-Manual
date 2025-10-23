@@ -40,8 +40,8 @@ int main() {
 
 
 Output:
+C:\Users\NALINI\Documents\Advance c Record\Advanced-C-Lab-Manual\image.png
 
-![alt text](image.png)
 
 
 Result:
@@ -94,8 +94,7 @@ int main() {
 
 Output:
 
-
-![alt text](image-1.png)
+C:\Users\NALINI\Documents\Advance c Record\Advanced-C-Lab-Manual\image-1.png
 
 
 
