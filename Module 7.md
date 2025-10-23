@@ -94,7 +94,9 @@ int main() {
 
 Output:
 
-C:\Users\NALINI\Documents\Advance c Record\Advanced-C-Lab-Manual\image-1.png
+<img width="620" height="477" alt="image" src="https://github.com/user-attachments/assets/03d9a687-ccce-4b1a-bfa0-814eafd88f1b" />
+
+
 
 
 
