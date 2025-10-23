@@ -40,7 +40,8 @@ int main() {
 
 
 Output:
-C:\Users\NALINI\Documents\Advance c Record\Advanced-C-Lab-Manual\image.png
+<img width="1017" height="311" alt="image" src="https://github.com/user-attachments/assets/79e5f0a0-a63d-4eac-abe2-7cb78be3e439" />
+
 
 
 
@@ -149,7 +150,8 @@ int main()
 
 Output:
 
-![alt text](image-2.png)
+<img width="1068" height="425" alt="image" src="https://github.com/user-attachments/assets/31d2c74e-8e68-4f1a-aacf-008084ac0255" />
+
 
 
 
@@ -208,7 +210,9 @@ int main()
 
 
 Output:
-![alt text](image-3.png)
+
+<img width="968" height="457" alt="image" src="https://github.com/user-attachments/assets/522f8492-1b02-4832-95f5-7fa8f1ac329d" />
+
 
 Result:
 Thus, the program is verified successfully
@@ -284,7 +288,9 @@ int main()
 
 Output:
 
-![alt text](image-4.png)
+
+<img width="517" height="360" alt="image" src="https://github.com/user-attachments/assets/8223e2f5-ec02-4bdc-a919-ebb67fb3309f" />
+
 
 Result:
 Thus, the program is verified successfully
