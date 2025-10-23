@@ -16,20 +16,58 @@ Algorithm:
  
 Program:
 
-//type your code here
-
-
-
+```
+#include<stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);
+    
+    switch(n){
+        case 1:
+        printf("one");
+        break;
+        
+        case 2:
+        printf("two");
+        break;
+        
+        case 3:
+        printf("three");
+        break;
+        
+        case 4:
+        printf("four");
+        break;
+        
+        case 5:
+        printf("five");
+        break;
+        
+        case 6:
+        printf("six");
+        break;
+        
+        case 7:
+        printf("seven");
+        break;
+        
+        case 8:
+        printf("eigth");
+        break;
+        
+        case 9:
+        printf("nine");
+        break;
+        
+        default:
+        printf("Greater than 9");
+        
+    }
+}
+```
 
 Output:
-
-
-//paste your output here
-
-
-
-
-
+<img width="534" height="200" alt="image" src="https://github.com/user-attachments/assets/07a54ff7-3e62-4148-b98e-29ae3b3e641b" />
 
 Result:
 Thus, the program is verified successfully
@@ -47,19 +85,30 @@ Algorithm:
  
 Program:
 
-//type your code here
+```
+#include<stdio.h>
+#include<string.h>
 
-
-
+int main(){
+    char num[1001];
+    int freq[10]={0};
+    
+    scanf("%s",num);
+    
+    for(int i=0;i<strlen(num);i++){
+        if(num[i]>='0' && num[i]<='9'){
+            freq[num[i]-'0']++;
+        }
+    }
+    
+    for(int i=0;i<10;i++){
+        printf("%d ",freq[i]);
+    }
+}
+```
 
 Output:
-
-
-//paste your output here
-
-
-
-
+<img width="665" height="168" alt="image" src="https://github.com/user-attachments/assets/70f7d462-6add-4a99-95c4-01372599d513" />
 
 
 Result:
@@ -84,19 +133,78 @@ Free the memory allocated for each string in s Free the memory allocated for s
  
 Program:
 
-//type your code here
+```
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
 
+// Function to swap two strings
+void swap(char arr[][101], int i, int j) {
+    char temp[101];
+    strcpy(temp, arr[i]);
+    strcpy(arr[i], arr[j]);
+    strcpy(arr[j], temp);
+}
 
+// Function to find the next lexicographical permutation
+bool next_permutation(char arr[][101], int n) {
+    int i = n - 2;
 
+    // Step 1: Find the rightmost element which is smaller than its next element
+    while (i >= 0 && strcmp(arr[i], arr[i + 1]) >= 0) {
+        i--;
+    }
+
+    if (i < 0) {
+        return false;  // No more permutations
+    }
+
+    int j = n - 1;
+    while (strcmp(arr[j], arr[i]) <= 0) {
+        j--;
+    }
+
+    // Step 2: Swap elements at i and j
+    swap(arr, i, j);
+
+    // Step 3: Reverse the elements after position i
+    int left = i + 1, right = n - 1;
+    while (left < right) {
+        swap(arr, left, right);
+        left++;
+        right--;
+    }
+
+    return true;
+}
+
+// Function to print the permutation
+void print_permutation(char arr[][101], int n) {
+    for (int i = 0; i < n; i++) {
+        printf("%s ", arr[i]);
+    }
+    printf("\n");
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    char arr[n][101];  
+    for (int i = 0; i < n; i++) {
+        scanf("%s", arr[i]);
+    }
+    print_permutation(arr, n);
+    while (next_permutation(arr, n)) {
+        print_permutation(arr, n);
+    }
+
+    return 0;
+}
+```
 
 Output:
-
-
-//paste your output here
-
-
-
-
+<img width="388" height="289" alt="image" src="https://github.com/user-attachments/assets/553c6116-0831-4c21-87f3-c9b43a9f9621" />
 
 
 Result:
@@ -117,20 +225,32 @@ Algorithm:
  
 Program:
 
-//type your code here
+```
+#include <stdio.h>
 
+int main() {
+    int n ;
+    scanf("%d",&n);
+        int size = 2 * n - 1; 
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            
+            int min = i < j ? i : j;
+            min = min < size - i ? min : size - i - 1;
+            min = min < size - j ? min : size - j - 1;
 
+            
+            printf("%d ", n - min);
+        }
+        printf("\n");
+    }
 
+    return 0;
+}
+```
 
 Output:
-
-
-//paste your output here
-
-
-
-
-
+<img width="663" height="783" alt="image" src="https://github.com/user-attachments/assets/d97dff15-dd76-4b49-bd7c-0abdedebf736" />
 
 Result:
 Thus, the program is verified successfully
@@ -155,21 +275,26 @@ o	Call the square() function and display the result.
 5.	End.
 
 Program:
-
-//type your code here
-
-
-
+```
+#include <stdio.h>
+void square();
+int main()
+{
+    
+    square();
+    return 0;
+}
+void square(){
+    int a;
+    scanf("%d",&a);
+    float ans = a*a;
+    printf("The square of %d is : %.2f",a,ans);
+}
+```
 
 Output:
 
-
-//paste your output here
-
-
-
-
-
+<img width="802" height="260" alt="image" src="https://github.com/user-attachments/assets/bc3d80bf-7fcd-4fe5-bbe7-a880af9a0a2d" />
 
 Result:
 Thus, the program is verified successfully
