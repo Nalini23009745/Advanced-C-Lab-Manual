@@ -1,3 +1,7 @@
+Name:Nalini P
+
+Reg.No:212223220063
+
 EXP NO:16 C PROGRAM TO SEARCH A GIVEN ELEMENT IN THE GIVEN LINKED LIST.
 Aim:
 To write a C program to search a given element in the given linked list.
