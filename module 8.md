@@ -1,4 +1,9 @@
+Name:Nalini P
+
+Reg.No:212223220063
+
 EXP NO:6 C PROGRAM PRINT THE LOWERCASE ENGLISH WORD CORRESPONDING TO THE NUMBER
+
 Aim:
 To write a C program print the lowercase English word corresponding to the number
 Algorithm:
